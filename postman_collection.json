@@ -1,0 +1,216 @@
+{
+	"info": {
+		"_postman_id": "2bcac81e-0e24-404a-9a5d-6de17702a3f7",
+		"name": "Dummy Boto3 Flask Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ec2/list - query param",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ec2/list?aws_access_key_id=&aws_secret_access_key=&region_name=",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ec2",
+						"list"
+					],
+					"query": [
+						{
+							"key": "aws_access_key_id",
+							"value": ""
+						},
+						{
+							"key": "aws_secret_access_key",
+							"value": ""
+						},
+						{
+							"key": "region_name",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ec2/list - url param",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ec2/list/<aws_access_key_id>/<aws_secret_access_key>/eu-central-1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ec2",
+						"list",
+						"<aws_access_key_id>",
+						"<aws_secret_access_key>",
+						"eu-central-1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ec2/start - query param",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"InstanceIds\": [\r\n        \"<InstanceId>\",\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/ec2/start?aws_access_key_id=&aws_secret_access_key=&region_name=",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ec2",
+						"start"
+					],
+					"query": [
+						{
+							"key": "aws_access_key_id",
+							"value": ""
+						},
+						{
+							"key": "aws_secret_access_key",
+							"value": ""
+						},
+						{
+							"key": "region_name",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ec2/start - url param",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"InstanceIds\": [\r\n        \"<InstanceId>\",\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/ec2/start/<aws_access_key_id>/<aws_secret_access_key>/<region_name>",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ec2",
+						"start",
+						"<aws_access_key_id>",
+						"<aws_secret_access_key>",
+						"<region_name>"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ec2/stop - query param",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"InstanceIds\": [\r\n        \"<InstanceId>\",\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/ec2/stop?aws_access_key_id=&aws_secret_access_key=&region_name=",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ec2",
+						"stop"
+					],
+					"query": [
+						{
+							"key": "aws_access_key_id",
+							"value": ""
+						},
+						{
+							"key": "aws_secret_access_key",
+							"value": ""
+						},
+						{
+							"key": "region_name",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ec2/stop - url param",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"InstanceIds\": [\r\n        \"<InstanceId>\",\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/ec2/stop/<aws_access_key_id>/<aws_secret_access_key>/<region_name>",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ec2",
+						"stop",
+						"<aws_access_key_id>",
+						"<aws_secret_access_key>",
+						"<region_name>"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
